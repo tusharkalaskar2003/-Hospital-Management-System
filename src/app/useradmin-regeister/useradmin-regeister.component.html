@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                         initial-scale=1.0">
+    <title>Admin_Rehister</title>
+</head>
+
+<body>
+
+    <nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+        <a style="color: white;" class="navbar-brand" href="#">DNYANOBA HOSPITALS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: white;"class="nav-link active btn btn-danger" aria-current="page" href="javascript:void(0);" routerLink="/home">Home</a>
+            </li>     
+          </ul>
+        </div>
+      
+      </nav>
+    
+    
+      <div class="container">
+      
+        <div class="row">
+        
+    
+            <div class="col-md-6">
+                <div class="card">
+                
+                    <div class="text-center">
+                        <h1>Registration for user admin</h1>
+                        <h6>Please enter Username & Password</h6>
+    
+                    </div>
+                    <form>
+                      
+                        <div class="container">
+
+                            <h2 class="text-center">Register</h2>
+                    
+                            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                                <div class="form-group">
+                    
+                                    <label>UserName</label>
+                                    <input type="text" id="username" formControlName="username" class="form-control" name="username" placeholder="username"
+                                         required />
+                                         <!-- [(ngModel)]="userAdmin.username" [ngModelOptions]="{standalone: true}" -->
+                                    
+
+                                </div>
+
+                                <div class="form-group">
+                    
+                                    <label>email</label><br>
+                                    <input type="text" id="email" formControlName="email" class="from-control" name="email" placeholder="email"
+                                        required>
+                                        <!-- [(ngModel)]="userAdmin.email"  -->
+                                </div>
+
+                                <div class="form-group">
+                    
+                                    <label>Password</label><br>
+                                    <input type="password" id="password" formControlName="password" class="from-control" name="password" placeholder="password"
+                                         required>
+                                         <!-- [(ngModel)]="userAdmin.password" [ngModelOptions]="{standalone: true}" -->
+                                </div>
+                    
+                                <button type="submit" class="btn btn-success"  >Submit</button>
+                                <button type="button" class="btn btn-danger" routerLink="/adminlogin">Cancle</button>
+                                <a href="javascript:void(0)" routerLink="/adminlogin" target="_self">alredy register...?</a>
+                            </form>
+                    
+                        </div>
+                      
+                    </form>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- <div class="container">
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+          <div>
+            <label>Username:</label>
+            <input type="text" formControlName="username" />
+            <div *ngIf="registrationForm.get('username').invalid && registrationForm.get('username').touched">
+              <small *ngIf="registrationForm.get('username').hasError('required')">Username is required.</small>
+              <small *ngIf="registrationForm.get('username').hasError('minlength')">Minimum 3 characters required.</small>
+            </div>
+          </div>
+      
+          <div>
+            <label>Email:</label>
+            <input type="email" formControlName="email" />
+            <div *ngIf="registrationForm.get('email').invalid && registrationForm.get('email').touched">
+              <small *ngIf="registrationForm.get('email').hasError('required')">Email is required.</small>
+              <small *ngIf="registrationForm.get('email').hasError('email')">Invalid email address.</small>
+            </div>
+          </div>
+      
+          <div>
+            <label>Password:</label>
+            <input type="password" formControlName="password" />
+            <div *ngIf="registrationForm.get('password').invalid && registrationForm.get('password').touched">
+              <small *ngIf="registrationForm.get('password').hasError('required')">Password is required.</small>
+              <small *ngIf="registrationForm.get('password').hasError('minlength')">Minimum 6 characters required.</small>
+            </div>
+          </div>
+      
+          <div>
+            <button type="submit" [disabled]="registrationForm.invalid">Register</button>
+          </div>
+        </form>
+      </div> -->
+</body>
+</html>
+
+

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid pt-3 pb-3" style="background-color: rgb(38, 43, 42)">
+            <a class="navbar-brand" style="color: white;" href="#">Kalaskar Hospital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item" >
+                        <a class="nav-link active btn btn-success ml-5" routerLink="/add-appoinment" style="color: white;">Add Appoinment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-danger ml-5" aria-current="page" routerLink="/admin" style="color: white;">Back</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS (Optional but recommended for toggler functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<p>appoinmentdash works!</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Number</th>
+            <th>Symtomps</th>
+            <th>Status</th>
+            <th>Action</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let appoi of appoinments">
+            <td>{{appoi.id}}</td>
+            <td>{{appoi.name}}</td>
+            <td>{{appoi.age}}</td>
+            <td>{{appoi.num}}</td>
+            <td>{{appoi.symtomps}}</td>
+            <td>
+                <button type="submit">Done</button>
+            </td>
+            <td>
+
+                <button (click)="delete(appoi.id)" class="btn btn-danger">Delete</button>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>

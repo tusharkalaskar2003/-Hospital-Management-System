@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management Home</title>
+
+   <!-- Favicon image added -->
+  <link rel="icon"  type="image/png" href="assets\images\favicon.png">
+
+  <!-- CSS CDNs -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+
+  <!-- Font-Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- src/index.html -->
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+  <!-- Navbar section -->
+  <header class="header_wrapper">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#"><b>Kalaskar Hospital</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+          <i class="navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav  menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="" fragment="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="" fragment="about">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="" fragment="service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="" fragment="team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="" fragment="gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="" fragment="testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="" fragment="blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  routerLink="" fragment="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Navbar section Exit -->
+
+  <!-- Banner sections -->
+  <section id="home" class="home">
+    <div class="banner_wrapper wrapper">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-md-1 order-2">
+            <h3>Better Life Through</h3>
+            <h1>Better Dentistry</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Iusto dolorum voluptates ratione culpa, ex distinctio?</p>
+            <a routerLink="/adminlogin" class="main-btn mt-4 fill-btn">Admin</a>
+            <a routerLink="/doclogin" class="main-btn my-4 ms-3 fill-btn">Doctor</a>
+          </div>
+          <div class="col-md-6 order-md-2 order-1 mb-md-0 mb-5">
+            <div class="top-sright-sec">
+              <div class="animate-img">
+                <img class="aimg1" src="assets\images\top-banner-img\woman-brush.png" alt="image">
+                <img class="aimg2" src="assets\images\top-banner-img\doctor.png" alt="image">
+              </div>
+              <img class="img-fluid ms-xl-5" src="assets\images\top-banner-img\top-right-img-1.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper pb-0 p-5">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card text-center">
+              <div class="icon-box">
+                <img src="assets\images\top-banner-img\Appointment-icon.png" alt="image">
+              </div>
+              <div>
+                <h4>Easy Appoinment</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus unde omnis aperiam corrupti aut quos?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card text-center">
+              <div class="icon-box">
+                <img src="assets\images\top-banner-img\Emergency-icon.png" alt="image">
+              </div>
+              <div>
+                <h4>Emergency</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus unde omnis aperiam corrupti aut quos?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card text-center">
+              <div class="icon-box">
+                <img src="assets\images\top-banner-img\7-Service-icon.png" alt="image">
+              </div>
+              <div>
+                <h4>24/7 Services</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Repellendus unde omnis aperiam corrupti aut quos?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section End -->
+
+  <!-- About Section -->
+
+  <section id="about" class="about_wrapper wrraper">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 mb-mb-0 mb-5">
+                  <div class="position-relative">
+                      <img src="assets\images\about\about-banner1.png" class="img-fluid" alt="image">
+                      <img src="assets\images\about\about-img2.png" class="about-animate" alt="image">
+                  </div>
+              </div>
+              <div class="col-md-6 text-center text-md-start">
+                  <h2>Welcome to Family</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quae optio vitae, repellat animi voluptatem? Necessitatibus sit et animi. Amet.</p>
+                  <div class="mt-5 card">
+                    <div class="about-clinic">
+                        <h4>500+</h4>
+                        <p>Happy Patient</p>
+                    </div>
+                    <div class="about-clinic">
+                        <h4>88+</h4>
+                        <p>Qualified Doctor</p>
+                    </div>
+                    <div class="about-clinic">
+                        <h4>20+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="about-clinic">
+                        <h4>55+</h4>
+                        <p>Dental Awards</p>
+                    </div>
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+  </section>
+
+
+
+
+  <section id="footer">
+
+    <p>All right reservs. C 2024</p>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- CDNs for JS -->
+  <!-- <script src="index.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
